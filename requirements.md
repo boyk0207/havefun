@@ -14,7 +14,7 @@
   additional meterial
   can curse certain words
 
-#non-funcitonal
+# non-funcitonal
 - server
 - Security
 - easy to use
