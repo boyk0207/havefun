@@ -1,27 +1,26 @@
-functional
+#functional
 
-\- UI/UX
+\- - UI/UX
 
-\- users
+\- - users
 
-\- Base user:
+\- - Base user:
 
-post, react, comment, report, search, select
+\-\-post, react, comment, report, search, select
 
-\- VIP user:
+\- - VIP user:
 
-\- additional meterial
+\- - additional meterial
 
-\- can curse certain words
+\- - can curse certain words
 
-non-funcitonal
+#non-funcitonal
+\- - server
 
-\- server
+\- - Security
 
-\- Security
+\- - easy to use
 
-\- easy to use
+\- - runs 24/7
 
-\- runs 24/7
-
-\- processing time low / fast
+\- - processing time low / fast
