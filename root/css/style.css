@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sono:wght,MONO@200..800,1&display=swap');
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
 
+
+
+/* ============================================
+   LANDING PAGE STYLES
+   ============================================ */
 * {
   padding: 0;
   margin: 0;
@@ -57,9 +64,18 @@ body {
   
 }
 
-.btn{
-  background-color: blue;
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
+.login-btn{
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+
+  padding: 10px 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  background: #5b6bff;
+  color: #ffffff;
+  font-weight: 700;
 }

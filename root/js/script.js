@@ -17,5 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============================================
 
 function initHomePage() {
-    
+    const loginBtn = document.getElementById("loginBtn");
+
+    if (loginBtn) {
+        loginBtn.addEventListener("click", () => {
+        window.location.href = "log.html";
+        });
+    }
 }
