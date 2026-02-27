@@ -10,9 +10,13 @@ body {
     sans-serif;
 }
 
+.logo_name p {
+  color: #1c4285;
+  font-weight: bold;
+}
+
 .logo {
   width: 40px;
-  margin-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -20,14 +24,19 @@ body {
 .header {
   display: flex;
   align-items: center;
-
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #e6e6e7;
+  position: relative;
+  /* needed for absolute positioning of search */
 }
 
 .logo_name {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-right: 20px;
 }
 
 .search {
@@ -40,11 +49,29 @@ body {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+
+  /* center horizontally within header */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search:active {
+  border: 1px solid;
 }
 
 .search p {
   color: #8e8a93;
-  margin-left: 5px;
+  margin-left: 10px;
+}
+
+.seach input {
+  border: none;
+  outline: none;
+}
+
+.search {
+  margin-right: auto;
 }
 
 
@@ -54,12 +81,27 @@ body {
 
 .container {
   display: flex;
-  
+
 }
 
-.btn{
+.btn {
   background-color: blue;
   width: 40px;
   height: 40px;
   margin-right: 20px;
+}
+
+.profile {
+  margin-left: auto;
+  /* push to the far right of the flex container */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.pfp_pic img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
 }
