@@ -1,62 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/log.css">
-    <title>Log In</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/log.css" />
+  <title>Log In</title>
 </head>
 
 <body>
+  <nav class="header">
+    <div class="logo_name">
+      <img src="../src/images/num_logo.png" alt="NUM logo" class="logo" />
+      <p>NUM-Khuram</p>
+    </div>
+  </nav>
 
-    <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form>
-                <h1>Бүртгүүлэх</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                </div>
-                <span>or use your email for registeration</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button>Бүртгүүлэх</button>
-            </form>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>NUM-Khuram</span></h1>
+      <p>
+        A modern social discussion platform connecting National University students
+        and teachers for structured academic discussions.
+      </p>
+
+      <div class="buttons">
+        <button class="primary" id="getStartedBtn">Get Started</button>
+        <button class="secondary" id="exploreBtn">Explore Platform</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Popup container -->
+  <div class="container" id="container">
+    <div class="form-container sign-up">
+      <form>
+        <h1>Бүртгүүлэх</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
-        <div class="form-container sign-in">
-            <form>
-                <h1>Нэвтрэх</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                </div>
-                <span>email болон нууц үгээ оруулна цц</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Нууц үгээ матсан?</a>
-                <button>Нэвтрэх</button>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome Back!</h1>
-                    <p>Enter your personal details to use all of site features</p>
-                    <button class="hidden" id="login">Нэвтрэх</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Register with your personal details to use all of site features</p>
-                    <button class="hidden" id="register">Бүртгүүлэх</button>
-                </div>
-            </div>
-        </div>
+        <span>or use your email for registeration</span>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="button">Бүртгүүлэх</button>
+      </form>
     </div>
 
-    <script src="../js/log.js"></script>
-</body>
+    <div class="form-container sign-in">
+      <form>
+        <h1>Нэвтрэх</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <span>email болон нууц үгээ оруулна</span>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <a href="#">Нууц үгээ мартсан?</a>
+        <button type="button">Нэвтрэх</button>
+      </form>
+    </div>
 
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Welcome Back!</h1>
+          <p>Enter your personal details to use all of site features</p>
+          <button class="hidden" type="button" id="login">Нэвтрэх</button>
+        </div>
+
+        <div class="toggle-panel toggle-right">
+          <h1>Hello, Friend!</h1>
+          <p>Register with your personal details to use all of site features</p>
+          <button class="hidden" type="button" id="register">Бүртгүүлэх</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/log.js"></script>
+</body>
 </html>
