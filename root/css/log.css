@@ -103,7 +103,12 @@ body{
 .overlay{
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.35);
+
+  background: rgba(0,0,0,0.3);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+
   opacity: 0;
   pointer-events: none;
   transition: opacity .25s ease;
