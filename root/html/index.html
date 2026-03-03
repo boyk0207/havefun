@@ -6,25 +6,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/output.css" />
   </head>
-  <body class="bg-white flex items-center justify-center flex-col h-lvh">
-    <nav class="header">
-      <div class="logo_name">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+
+      font-family: "Montserrat",
+        sans-serif;
+    }
+
+    body {
+      font-family: "Montserrat",
+        sans-serif;
+    }
+  </style>
+  <body>
+    <nav
+      class="flex items-center justify-start pl-2.5 pr-2.5 border border-[#e6e6e7] relative"
+    >
+      <div class="flex items-center gap-2.5 mr-5">
         <img
           src="../src/images/num_logo.png"
           alt=""
-          class="logo"
+          class="w-10 mt-2.5 mb-2.5"
           style="display: block;"
         />
-        <p style="display: block;">NUM-Khuram</p>
+        <p style="display: block;" class="font-bold ">NUM-Khuram</p>
       </div>
 
-      <div class="search">
+      <div
+        class="w-[25%] h-10 rounded-[10px] bg-[#f3f3f5] flex items-center pl-2.5 pr-2.5 absolute left-[50%] mr-auto"
+        style="transform: translateX(-50%);"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
           fill="currentColor"
           class="bi bi-search"
+          style="color:#8e8a93;"
           viewBox="0 0 16 16"
         >
           <path
@@ -34,12 +54,12 @@
 
         <input
           type="text"
-          class="search-input"
+          class="border-none outline-none bg-transparent w-full ml-5"
           placeholder="Хичээл, хэлэлцүүлэг хайх"
         />
       </div>
 
-      <div class="profile">
+      <div class="profile ml-auto flex items-center gap-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -54,16 +74,24 @@
         </svg>
 
         <div class="pfp_pic">
-          <img src="../src/images/image.png" alt="pic" />
+          <img
+            src="../src/images/image.png"
+            class=" h-10 w-10 rounded-4xl"
+            alt="pic"
+          />
         </div>
       </div>
     </nav>
 
-    <div class="layout">
-      <aside>
+    <div class="flex">
+      <aside class="w-85 border border-[#e6e6e7] h-lvh p-5 pr-5">
         <ul>
           <li>
-            <a href="#">
+            <a
+              href="#"
+              class="h-12.5 rounded-2xl flex items-center pl-5 gap-4 mb-1 list-none"
+              style="color:#586170"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -86,7 +114,11 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="#"
+              class="h-12.5 rounded-2xl flex items-center pl-5 gap-4 mb-1 list-none"
+              style="color:#586170"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -109,7 +141,11 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="#"
+              class="h-12.5 rounded-2xl flex items-center pl-5 gap-4 mb-1 list-none"
+              style="color:#586170"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -132,7 +168,11 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="#"
+              class="h-12.5 rounded-2xl flex items-center pl-5 gap-4 mb-1 list-none"
+              style="color:#586170"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -153,7 +193,11 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="#"
+              class="h-12.5 rounded-2xl flex items-center pl-5 gap-4 mb-1 list-none"
+              style="color:#586170"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
