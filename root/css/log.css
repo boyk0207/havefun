@@ -329,3 +329,92 @@ body{
 .container.active .toggle-right{
   transform: translateX(200%);
 }
+
+/* =========================
+   ROLE CHOICE
+========================= */
+
+.role-model{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+
+  z-index: 999;
+  width: min(600px, calc(100% - 24px));
+}
+
+.role-model.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.role-box{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 28px;
+  border: 1px solid #e9e9e9;
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+}
+
+.role-box h2{
+  margin: 0 0 8px;
+  font-size: 28px;
+} 
+
+.role-box p{
+  margin: 0 0 22px;
+  color: #6f7a8a;
+}
+
+.role-actions{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.role-btn{
+  border: 2px solid #e6e6e6;
+  border-radius: 14px;
+  background: #fff;
+  padding: 26px 18px;
+  cursor: pointer;
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+
+.role-btn:hover{
+  transform: translateY(-4px);
+  border-color: #1f3a8a;
+  box-shadow: 0 4px 12px rgba(31, 58, 138, 0.2);
+}
+
+.role-btn.active{
+  border-color: #1f3aa6;
+  box-shadow: 0 12px 26px rgba(31,58,166,.15);
+}
+
+.role.icon{
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.role-btn h3{
+  margin: 8px 0 8px;
+  font-size: 22px;
+}
+
+.role-btn span{
+  display: block;
+  color: #6f7a8a;
+  line-height: 1.35;
+}
